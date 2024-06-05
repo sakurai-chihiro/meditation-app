@@ -1,0 +1,14 @@
+// gulp
+// ネストのテスト
+div {
+  p {
+    font-weight: bold;
+  }
+}
+
+// 変数のテスト
+$fontColor: #333;
+
+h1 {
+  color: $fontColor;
+}
