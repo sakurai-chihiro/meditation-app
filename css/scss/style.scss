@@ -15,13 +15,34 @@
 .player-container {
   height: 80%;
   flex: 1;
-}
-.time-select {
-  background-color: lightblue;
-}
-.sound-picker {
-  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .player-container {
-  background-color: lightcoral;
+  position: relative;
+  svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; // SVGが邪魔して再生ボタンを押せないため
+  }
+}
+
+.time-display {
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+  font-size: 50px;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
 }
