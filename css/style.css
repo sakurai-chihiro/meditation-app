@@ -48,3 +48,37 @@ video {
   width: 100%;
   z-index: -1;
 }
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.time-select button:hover {
+  color: black;
+  background: white;
+}
+
+.sound-picker button {
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  border: none;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+  background-color: #4972a1;
+}
+.sound-picker button:nth-child(2) {
+  background-color: #a14f49;
+}
+.sound-picker button img {
+  height: 100%;
+}
